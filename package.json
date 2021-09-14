@@ -1,0 +1,18 @@
+{
+  "name": "CSNote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:WeiPeiXian/CSNote.git",
+  "author": "weipeixian <weipeixian@xiaomi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+   "scripts": {
+    "docs:devx": "vuepress dev docs --open",
+    "docs:dev": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs --open",
+    "docs:buildx": "vuepress build docs",
+    "description": "在 build 时不要添加 --debug 之类的选项，否则会导致生成之后的搜索和侧边栏点击无效的问题",
+    "docs:build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs"
+  }
+}
